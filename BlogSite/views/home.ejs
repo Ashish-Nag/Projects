@@ -1,0 +1,19 @@
+<%- include('./partials/header') %>
+<h2 class="mb-4">Home</h2>
+
+<h3 class="mb-1">Random title</h3>
+<p class="mb-3"><%= content %> </p>
+
+<% blogPosts.forEach((item)=>{ %>
+<div class="post-item">
+    <h3 class="mb-1"><%= item.title %> </h3>
+    <% if(item.body.length > 100) {%>
+    <p> <%= (item.body).substring(0,99) %>... </p>
+    <a class="mb-3" href="/posts/<%= item.title %>">Read More</a>
+    <% } else { %>
+    <p class="mb-3"><%= item.body %> </p>
+    <% }  %>
+</div>
+<% }) %>
+
+<%- include('./partials/footer') %>
