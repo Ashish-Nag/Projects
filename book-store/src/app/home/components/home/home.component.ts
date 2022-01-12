@@ -34,5 +34,4 @@ export class HomeComponent implements OnInit {
     book2.imgSrc ="https://edit.org/images/cat/book-covers-big-2019101610.jpg"
     this.books.push(book2);
   }
-
 }

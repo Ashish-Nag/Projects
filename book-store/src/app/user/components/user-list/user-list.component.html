@@ -1,0 +1,15 @@
+<div class="container">
+    <table class="table table-dark table-stripped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Date Created</th>
+                <th scope="col">Total Purchases</th>
+            </tr>
+        </thead>
+        <app-table-body *ngFor="let user of usersList" [userList]="user"></app-table-body>
+    </table>
+</div>
