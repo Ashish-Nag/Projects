@@ -7,6 +7,7 @@ import { LoginComponent } from './auth/components/login/login.component';
 import { RegisterComponent } from './auth/components/register/register.component';
 import { HomeComponent } from './home/components/home/home.component';
 import { HomeModule } from './home/home.module';
+import { SharedModule } from './shared/shared.module';
 
 // * Define the routes for displaying different components
 const routes = [
@@ -19,7 +20,7 @@ const routes = [
     AppComponent
   ],
   imports: [
-    BrowserModule, HomeModule, RouterModule.forRoot(routes)
+    BrowserModule, HomeModule, RouterModule.forRoot(routes), SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
