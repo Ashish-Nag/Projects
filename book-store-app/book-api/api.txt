@@ -1,0 +1,20 @@
+WE will create REST api in the following steps : 
+
+    1> create folder structure using best practics
+    2> create Routing
+    3> create model
+    4> create api controller
+    5> create Repo
+
+
+What is an api : 
+
+    REST api : Representation state transfer protocol
+    SOAP : simple object access protocol
+
+    REST is preferred over soap because rest is lightweight while soap is heavier and therefore slow.
+
+    SOAP has multiple redundant codes which makes it heavier and slow.
+
+Repository is responsible for establishing connections with databases.
+
