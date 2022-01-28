@@ -1,0 +1,21 @@
+nav {
+  min-height: 2.5rem;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.322);
+  color: #000;
+  font-weight: 700;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-item:hover {
+  color: fade(#fff, 80%);
+  outline: none;
+  background-color: transparent;
+}
+nav div ul {
+  display: flex;
+  flex-direction: row;
+}
